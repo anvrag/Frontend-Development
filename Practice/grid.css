@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Playwrite Is;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+#nav {
+    /* height: 100%;
+    width: 100%; */
+    display: grid;
+    grid-template-columns: 60% 5% 5% 5% 7%;
+    justify-items: start;
+    align-items: center;
+    justify-content: space-evenly;
+    color: red;
+    background-color: black;
+}
+
+h4::selection {
+    color: aqua;
+}
+
+h1:hover {
+    color: gold;
+}
