@@ -207,3 +207,7 @@ use gap to give gap between elements.
 # opacity
 
 to change the opacity of an element.
+
+# for img tag
+
+use object-fit : contain;
