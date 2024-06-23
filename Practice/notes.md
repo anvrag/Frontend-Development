@@ -47,6 +47,8 @@ it will be fixed like px
 
 rem (root element): depends upon html ke font size par
 
+1 rem = 16px
+
 max & min : max ek max hook/limit/boundary laga deta and min ek min limit/boundary/hook laga deta
 used for responsiveness.
 
@@ -254,3 +256,15 @@ flex-shrink: 0;
     background-color: #f92526;
     border-radius: 8px;
 }
+
+
+# media - responsiveness
+
+  (most smartphone comes within 600px)
+ @media (max-width:600px) {
+  
+ }
+
+ # fit-content
+
+  height: fit-content; -> jitne line me content ban jaye
