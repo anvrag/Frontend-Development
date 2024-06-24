@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    animation-name: move;
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes move {
+    from{
+        left: 0;
+        background-color: coral;
+        rotate: 0;
+    }
+    to{
+        left: 80%;
+        background-color: cornflowerblue;
+        rotate: 360deg;
+    }
+} */
+@keyframes move {
+    0%{
+        left: 0;
+        top:0;
+        background-color: coral;
+        rotate: 0;
+    }
+    50%{
+        left: 80%;
+        top:0;
+        background-color: cornflowerblue;
+        rotate: 180deg;
+    }
+    100%{
+        left: 80%;
+        top: 50%;
+        background-color: greenyellow;
+        rotate: 360deg;
+    }
+}

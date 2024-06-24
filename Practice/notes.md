@@ -277,3 +277,48 @@ flex-shrink: 0;
   # to get a sentence in one line
 
     white-space: nowrap;
+
+  # Animation
+
+  animation is just a journey from initial position to final position.
+
+  creating animation and applying animation is two diff things.
+
+  creation:
+  @keyframes identifier {
+    
+}
+  initial
+  from{
+
+    }
+    final
+    to{
+        
+    }
+
+    apply:
+    animation-name: ;
+
+# to make the object stay at the pos where it ended
+ 
+    animation-fill-mode: forwards;
+
+
+# iteration 
+
+    animation-iteration-count: infinite;
+    
+# direction
+
+    animation-direction: alternate;
+
+# animation timing graph
+
+    animation-timing-function: ease-in-out;
+
+
+# sudo elements - before and after
+
+they come after or before the content of element and not the element itself.
+ 
