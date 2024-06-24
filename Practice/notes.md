@@ -268,3 +268,12 @@ flex-shrink: 0;
  # fit-content
 
   height: fit-content; -> jitne line me content ban jaye
+
+
+  # to make specific element visible when the parent display is none
+
+    display: initial;
+
+  # to get a sentence in one line
+
+    white-space: nowrap;
