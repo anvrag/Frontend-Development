@@ -321,4 +321,31 @@ flex-shrink: 0;
 # sudo elements - before and after
 
 they come after or before the content of element and not the element itself.
- 
+
+# css bug
+
+jab bhi parent div and child div create kia ho aur agar child div ko margin dete top se to uske saath parent div bhi khisak jata cux dono ek dusre ke saath ekdum close hai so usko solve krne ki liye parent ko top se padding deni padti and bug will be fixed.
+
+# to blur bg
+
+    backdrop-filter: blur(10px);
+
+# to adjust text with background
+
+/* mix-blend-mode: */
+
+# to get the scrolling pics like marquee
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  
+  @keyframes Scroll-Anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+  
