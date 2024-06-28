@@ -349,3 +349,9 @@ jab bhi parent div and child div create kia ho aur agar child div ko margin dete
     }
 }
   
+  # for hand on screen
+    cursor: pointer;
+  
+  # to fit bg img in particular size
+
+  background-fit: cover;
