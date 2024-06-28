@@ -411,8 +411,242 @@ border-radius: 50%;
     width: 100%;
     background-color: azure;
     border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem h4 {
+    font-size: 1.2vw;
+    /* background-color: antiquewhite; */
+    width: 6%;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .elem:nth-last-child(1){
     border-bottom: 2px solid black;
+}
+
+.elem .elem-part2 {
+    width: 50%;
+}
+
+.elem .elem-part2 h5{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.elem .elem-part2 h1{
+    font-size: 2.5vw;
+}
+
+.elem img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8%;
+    object-fit: cover;
+    object-position: 0 25%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.elem:nth-child(2n) img{
+    left: 43%;
+}
+
+.elem:nth-last-child(1) img {
+    object-position: top;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+
+.elem:hover {
+    background-color: aliceblue;
+}
+
+#page6 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page6-left {
+    height: 100%;
+    width: 40%;
+    background-color: aquamarine;
+    background: url(https://i.pinimg.com/originals/8b/a9/79/8ba979923adc415c9a6ddfb4244499e1.png);
+    background-size: cover;
+}
+
+#page6-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: antiquewhite; */
+}
+
+#page6-right-top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+    color: beige;
+}
+
+#page6-right-top h1{
+    font-family: monument;
+    font-size: 2.5vw;
+}
+#page6-right-top h4{
+    font-family: sans-serif;
+    font-size: 1.4vw;
+    font-weight: 550;
+    line-height: 1.9vw;
+}
+#page6-right-top p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.4vw;
+}
+
+#page6-right-bottom {
+    height: 50%;
+    width: 100%;
+    /* background-color: goldenrod; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page6-right-bottom img{
+    height: 100%;
+    width: 48%;
+    object-fit: cover;
+}
+
+#page7 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 7vw;
+}
+
+#page7 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#page8 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page8-left {
+    height: 100%;
+    width: 48%;
+    background-color: aquamarine;
+    background: url(https://4kwallpapers.com/images/wallpapers/dua-lipa-model-singer-portrait-beautiful-2880x1800-5859.jpg);
+    background-size: cover;
+    background-position: 69%;
+}
+
+#page8-right{
+    height: 100%;
+    width: 48%;
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+
+#page8-right-top{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    color: beige;
+    bottom: 0%;
+    position: absolute;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+#page8-right-top h4{
+    font-family: sans-serif;
+    font-size: 1.4vw;
+    font-weight: 550;
+    line-height: 1.9vw;
+}
+#page8-right-top p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.4vw;
+    margin-bottom: 3vw;
+}
+
+#page8-right-bottom {
+    height: 73%;
+    width: 100%;
+    /* background-color: goldenrod; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page8-right-bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#marque{
+    /* height: 15vh; */
+    width: 100%;
+    background-color: blanchedalmond;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.7vw;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 0.2vw;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
 }

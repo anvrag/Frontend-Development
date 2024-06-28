@@ -355,3 +355,9 @@ jab bhi parent div and child div create kia ho aur agar child div ko margin dete
   # to fit bg img in particular size
 
   background-fit: cover;
+
+  # for stroke text
+
+    -webkit-text-stroke: 2px black transparent;
+
+# inline block me do elements ke bich ka gap 4 px hota
