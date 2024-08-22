@@ -14,12 +14,6 @@ body{
     background-color: #f8f7f4;
 }
 
-#page1{
-    height: 100%;
-    width: 100%;
-    /* background-color: bisque; */
-}
-
 #nav{
     height: 100px;
     width: 100%;
@@ -41,7 +35,7 @@ body{
 
 #nav-part1>h4{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 #nav>img{
@@ -61,7 +55,7 @@ body{
 #nav-part2>button:nth-child(1){
     color: black;
     background-color: transparent;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #nav-part2>button{
@@ -79,4 +73,174 @@ body{
     height: calc(100% - 100px);
     width: 100%;
     /* background-color: aquamarine; */
+    padding-top: 80px;
+    font-family: "Source Serif 4", Georgia, serif,"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+;
+}
+
+#content>h3{
+    background-color: #f1eec3;
+    padding: 10px 16px;
+    width: fit-content;
+    border-radius: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+#content>h1{
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    padding-top: 40px;
+    line-height: 76px;
+}
+
+#content>h4{
+    padding-top: 24px;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: normal;
+    font-weight: 600;
+}
+
+#content>button{
+    padding: 19px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 32px 5px;
+    /* text-align: center; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.elem {
+    height: 350px;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    padding: 20px 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.elem-slide {
+    display: inline-block;
+    /* background-color: burlywood; */
+    cursor: pointer;
+    animation: Scroll-Anime 17.9s infinite linear;
+}
+
+.elem:hover .elem-slide{
+    animation-play-state: paused!important;
+}
+
+.elem-slide>img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 25px;
+    border-radius: 35px;
+}
+
+.elem-slide>video{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 20px;
+    object-position: center;
+    border-radius: 35px;
+}
+
+@keyframes Scroll-Anime {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} 
+
+#page-2{
+    background-color: #f8f7f4;
+    /* position: relative; */
+    padding: 72px;
+    padding-top: 42px;
+}
+
+#page-2 > h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.box{
+    height: 237px;
+    width: 316px;
+    background-color: red;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 12px;
+    position: relative;
+    transition: all ease 0.4s;
+}
+
+.box > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.box-bottom {
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.69));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 7px;
+
+}
+
+.box:hover {
+    scale: 1.1;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover > .box-bottom{
+    bottom: 0%;
+}
+
+.box-bottom h1{
+    font-size: 16px;
+    color: white;
+    /* padding-left: 20px; */
+    /* padding-top: 45px; */
+    display: inline-block;
+}
+
+.box-bottom >img{
+    height: 38%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#page-3 {
+    height: 100%;
+    width: 100%;
+    background: #ffda79;
 }

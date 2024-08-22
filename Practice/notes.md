@@ -245,6 +245,7 @@ flex-shrink: 0;
 
 # to hide scrollbar
 
+to parent:
 #text-content::-webkit-scrollbar {
     display:none;
 }
@@ -361,3 +362,56 @@ jab bhi parent div and child div create kia ho aur agar child div ko margin dete
     -webkit-text-stroke: 2px black transparent;
 
 # inline block me do elements ke bich ka gap 4 px hota
+
+# to center an element:
+
+    child -> 
+    position: relative; (will adjust acc to parent)
+    left: 50%;
+    transform: translateX(-50%);
+
+# to create scrollable elements on main axis
+     
+    to parent:
+    display: flex;
+    flex-wrap: nowrap; (to stop the flexing)
+
+    to child:
+    flex-shrink: 0; (child wont shrink/adjust acc to parent)
+
+# to scroll from x axis instead of whole page
+
+overflow-x : auto; (main axis me scrollbar/scroll)
+overflow-y : hidden; (pura page scroll nahi hoga)
+
+# inline-elements pe block ki properties like margin and padding do not work, therfore: we use inline-block property
+
+# to create a scrollable elements using inline-block property:
+
+parent -> white-space : nowrap; (isme jo bhi elements next line me 
+                                 arhe the wo same line me ajate)
+
+child -> display : inline-block; (to use features of both properties)
+
+# for smoother transition of filter on an element
+
+transition: filter 0.5s;
+
+# for grayscale and blur other elements
+
+    filter: grayscale(1) blur(5px);
+
+# object fit: cover vs background size:cover
+
+object fit: cover is used in img tag and bg size: cover is used in bg img
+
+# to pause an animation when hover
+
+.elem:hover .elem-slide{
+    animation-play-state: paused!important;
+}
+
+# to add show to a box:
+
+box-shadow: x-axis y-axis blur rgba(0, 0, 0, 0.400);
+}
