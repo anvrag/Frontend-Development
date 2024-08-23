@@ -415,3 +415,10 @@ object fit: cover is used in img tag and bg size: cover is used in bg img
 
 box-shadow: x-axis y-axis blur rgba(0, 0, 0, 0.400);
 }
+
+# to change pos of button 
+{
+  position: relative
+  left:50%
+  transform: translatex(-50%)
+}

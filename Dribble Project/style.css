@@ -79,7 +79,7 @@ body{
 }
 
 #content>h3{
-    background-color: #f1eec3;
+    animation: bg-colour ease infinite 15s;
     padding: 10px 16px;
     width: fit-content;
     border-radius: 32px;
@@ -87,6 +87,33 @@ body{
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
+}
+
+@keyframes bg-colour {
+    0%{
+        background-color: #ffda79;
+    }
+    15%{
+        background-color: #c4cc23a2;
+    }
+    30%{
+        background-color: #ffc3b0;
+    }
+    45%{
+        background-color: #e7b4ed;
+    }
+    60%{
+        background-color: #d2bdf3;
+    }
+    75%{
+        background-color: #f3ebb9;
+    }
+    90%{
+        background-color: #ffd979cc;
+    }
+    100%{
+        background-color: #ffda79;
+    }
 }
 
 #content>h1{
@@ -243,4 +270,106 @@ body{
     height: 100%;
     width: 100%;
     background: #ffda79;
+    font-family: "Source Serif 4", Georgia, serif,
+    "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+#page-3>h1{
+    text-align: center;
+    font-size: 64px;
+    padding-top: 120px;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+}
+
+#page-3>p{
+    padding-top: 24px;
+    font-size: 21px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+#page-3>button{
+    padding: 16px 24px;
+    border-radius: 32px;
+    border: none;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bolder;
+    position: relative;
+    left: 50%;
+    transform:translateX(-120%); 
+    margin: 27px 16px;
+    background-color: black;
+    color: white;
+}
+
+#page-3 > #button-2{ 
+    background-color:white;
+    color: black;
+}
+
+#page-3>h4{
+    padding-top: 24px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#page-3>h4>a{
+    color: black;
+}
+
+#page-4{
+    height: 70%;
+    width: 100%;
+}
+#bottom-slider{
+    height: 293px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    padding: 62px 35px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slider-elem{
+    display: inline-block;
+    padding: 0 14px; 
+}
+
+
+@keyframes Scroll-anime {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-129.25%);
+    }
+} 
+#slider-track{
+    /* display: inline-block; */
+    animation: Scroll-anime 25s infinite linear;
+}
+
+#slider-track:hover {
+    animation-play-state: paused!important;
+    
+}
+#slider-track img:hover {
+    box-shadow: 1px 5px 40px rgba(0, 0, 0, 0.527);   
+    scale: 1.1;
+}
+
+.slider-elem>h3{
+    padding-top: 14px;
+    font-size: 14px;
+}
+
+.slider-elem>img{
+    border-radius: 12px;
+    height: 150px;
+    width: 200px;
+    transition: all ease 0.4s!important;
+}
+
